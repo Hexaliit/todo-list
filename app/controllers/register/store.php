@@ -17,6 +17,13 @@ if (trim(strlen($userName) , " ") == 0 || trim(strlen($userName) , " ") > 191) {
 if (trim(strlen($password) , " ") == 0 || trim(strlen($password), " ") > 10) {
     $errors[] = 'Password Should Not Be Null Or Grater Than 10 Chars';
 }
+$user = $db->query("SELECT user_name FROM users where user_name = :user_name" , [
+    'user_name' => $userName
+])->find();
+
+if ($user) {
+    $errors[] = $userName." already exists please pick another one";
+}
 
 if (!empty($errors)) {
     $_SESSION['registerErrors'] = $errors ;

@@ -1,0 +1,10 @@
+{
+    "name": "techzone-pc/todolist",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        } ,
+        "files": ["app/functions.php" , "app/router.php" , "app/config.php"]
+    },
+    "require": {}
+}

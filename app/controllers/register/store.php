@@ -34,7 +34,7 @@ if (!empty($errors)) {
 
 $db->query("INSERT INTO users(user_name , password) VALUES (:user_name , :password)" , [
     'user_name' => $userName ,
-    'password' => password_hash($password , PASSWORD_BCRYPT)
+    'password' => password_hash($password, PASSWORD_BCRYPT)
 ]);
 
 

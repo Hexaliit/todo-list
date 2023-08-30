@@ -39,7 +39,6 @@ if ($user) {
     $errors[] = 'Invalid username  or password';
 }
 
-//implement session loginerrors
 if (!empty($errors)) {
     $_SESSION['loginErrors']= $errors;
     header('location: /todolist/login');

@@ -1,28 +1,14 @@
 <?php
 
-//$a = 100;
-//$b = & $a;
-//
-//var_dump($a);
-//var_dump($b);
-//
-//echo "AFTER CHANGE :";
-//
-//$a = 200;
-//var_dump($a);
-//var_dump($b);
-//
-//
-//die();
-
-
+const BASE_PATH = __DIR__.'/../../';
 
 session_start();
 
-require '../../vendor/autoload.php' ;
+require BASE_PATH . 'vendor/autoload.php';
+require BASE_PATH . 'app/bootstrap.php';
 
-
-require '../bootstrap.php';
+//require '../../vendor/autoload.php' ;
+//require '../bootstrap.php';
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 

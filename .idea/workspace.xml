@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="02efd822-54f8-484c-8af8-f621966b7e69" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Core/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Base.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Container.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Container.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/login/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/login/store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/register/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/register/store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/task/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/task/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/task/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/task/show.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
       <workItem from="1693215687429" duration="13532000" />
       <workItem from="1693230995728" duration="546000" />
       <workItem from="1693287459840" duration="26725000" />
-      <workItem from="1693376287097" duration="4033000" />
+      <workItem from="1693376287097" duration="8363000" />
     </task>
     <servers />
   </component>

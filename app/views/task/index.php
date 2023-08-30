@@ -13,6 +13,12 @@
     }</style>
 <br>
 <h3><span style="color=#000000">Tasks For : <?php echo $_SESSION['user'][1]; ?></span></h3>
+<div style="float: contour;">
+    <form method="POST" action="logout">
+        <input style="background: red ; color: white ; border: none ; padding: 5px ; border-radius: 10%" type="submit" name="logout" value="logout">
+        <br>
+    </form>
+</div>
 <hr>
 <br>
 <span style="color: green">

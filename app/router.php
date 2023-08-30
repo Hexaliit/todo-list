@@ -22,6 +22,8 @@ function router($uri , $method) {
         return '../controllers/task/update.php';
     } elseif ($uri === 'destroy' && $method === 'DELETE') {
         return '../controllers/task/destroy.php';
+    } elseif ($uri === 'logout' && $method === 'POST') {
+        return '../controllers/logout/logout.php';
     }
 
 

@@ -5,7 +5,7 @@ namespace App\Core;
 
 class Container {
 
-protected $bindings = [];
+public $bindings = [];
 
 
 public function bind($key , $resolver) {

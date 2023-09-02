@@ -1,0 +1,44 @@
+**** first
+
+SELECT orders.orderNumber , orders.orderDate , orderdetails.orderLineNumber , products.productName , orderdetails.quantityOrdered , orderdetails.priceEach 
+FROM products 
+INNER JOIN orderdetails 
+ON products.productCode=orderdetails.productCode 
+INNER JOIN orders 
+ON orderdetails.orderNumber=orders.orderNumber 
+ORDER BY orders.orderNumber , orderdetails.orderLineNumber; 
+
+
+**** first first
+
+
+SELECT customers.customerName, customers.contactFirstName, customers.contactLastName , orders.customerNumber, orders.orderNumber , orders.orderDate , orderdetails.orderLineNumber , products.productName , orderdetails.quantityOrdered , orderdetails.priceEach 
+FROM products 
+INNER JOIN orderdetails 
+ON products.productCode=orderdetails.productCode 
+INNER JOIN orders 
+ON orderdetails.orderNumber=orders.orderNumber
+INNER JOIN customers
+ON	orders.customerNumber=customers.customerNumber
+ORDER BY orders.orderNumber , orderdetails.orderLineNumber; 
+
+
+
+
+
+
+*******second
+
+SELECT reporter.firstName, reporter.lastName, employees.firstName, employees.lastName, employees.jobTitle 
+FROM employees AS reporter 
+INNER JOIN employees ON reporter.reportsTo=employees.employeeNumber;
+
+
+
+******third
+SELECT year(orders.orderDate) AS year , SUM(orderdetails.quantityOrdered * orderdetails.priceEach) as totalSale 
+FROM orders 
+INNER JOIN orderdetails 
+ON orders.orderNumber=orderdetails.orderNumber 
+WHERE orders.status="Shipped" AND year(orders.orderDate) > 2003 
+GROUP BY year(orders.orderDate);
